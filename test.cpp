@@ -1,8 +1,15 @@
 #include <iostream>
 using namespace std;
 
+int factorial(int n)
+{
+    if (n == 1)
+        return 1;
+    return n * factorial(n - 1);
+}
+
 int main(int argc, char const *argv[])
 {
-    cout << "Hello there this is a cpp file." << endl;
+    cout << factorial(5) << endl;
     return 0;
 }
